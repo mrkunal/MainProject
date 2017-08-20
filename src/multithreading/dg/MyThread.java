@@ -3,17 +3,19 @@ package multithreading.dg;
 /**
  * Created by kunal on 19/8/17.
  */
-public class MyThread implements Runnable {
+public class MyThread extends Thread {
 
-    private Display display;
-    private String name;
-    public MyThread(Display display,String name) {
-    this.display=display;
-    this.name=name;
-    }
+    int total = 0;
+
 
     @Override
     public void run() {
-        display.showDisplay(this.name);
+
+        synchronized (this) {
+            for (int i = 0; i < 100; i++) {
+                this.total += i;
+            }
+            this.notify();
+        }
     }
 }

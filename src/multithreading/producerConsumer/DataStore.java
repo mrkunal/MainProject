@@ -5,9 +5,10 @@ public class DataStore {
 
     static Long[] data = new Long[10];
 
-    private int insertionPointer = 0;
-    private int fetchPointer = -1;
-
+    public static int insertionPointer = 0;
+    public static int fetchPointer = 0;
+    public static int size=0;
+    /*
 
     void add(Long d) {
         if(insertionPointer!=fetchPointer) {
@@ -25,6 +26,6 @@ public class DataStore {
         }
         return null;
     }
-
+*/
 
 }

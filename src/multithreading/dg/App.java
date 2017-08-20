@@ -7,13 +7,21 @@ public class App {
 
     public static void main(String[] args) {
 
-        Display d1=new Display();
-        Display d2=new Display();
 
-    Thread t1=new Thread(new MyThread(d1,"Kunal"));
-    Thread t2=new Thread(new MyThread(d2,"Kunu"));
+        MyThread t1 = new MyThread();
+        t1.start();
 
-    t1.start();
-    t2.start();
+        try {
+            synchronized (t1) {
+                System.out.println("Waiting for t1 thread");
+                t1.wait();
+                System.out.println(t1.total);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            System.out.println("interuppted");
+        }
+
+
     }
 }

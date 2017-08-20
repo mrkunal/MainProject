@@ -16,12 +16,12 @@ public class ProducerConsumer extends Thread {
 
         Thread t1=new Thread(new Producer());
         Thread t2=new Thread(new Consumer());
+        Thread t3=new Thread(new Consumer());
 
         t1.start();
         t2.start();
+        t3.start();
 
-        t1.interrupt();
-        System.out.println(t1.isInterrupted());
         System.out.println("interrupt called");
 
     }
