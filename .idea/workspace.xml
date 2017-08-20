@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1cb735e-b5f4-4bb9-9a25-15c4ea7c7b6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/multithreading/latchthreading/AppLatch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/multithreading/latchthreading/Worker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/multithreading/latchthreading/AppExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,12 +32,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppLatch.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppLatch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multithreading/latchthreading/AppLatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            <state relative-caret-position="162">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppExecutor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/multithreading/latchthreading/AppExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,8 +57,8 @@
       <file leaf-file-name="Worker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multithreading/latchthreading/Worker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="33" column="71" lean-forward="false" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+            <state relative-caret-position="81">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,6 +201,7 @@
         <option value="$PROJECT_DIR$/src/multithreading/latchthreading/App.java" />
         <option value="$PROJECT_DIR$/src/multithreading/latchthreading/Worker.java" />
         <option value="$PROJECT_DIR$/src/multithreading/latchthreading/AppLatch.java" />
+        <option value="$PROJECT_DIR$/src/multithreading/latchthreading/AppExecutor.java" />
       </list>
     </option>
   </component>
@@ -560,27 +572,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="false" name="LinkedList1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="linkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="linkedList.LinkedList1" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MainProject" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.AppExecutor">
     <configuration default="false" name="MarsRover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -649,6 +641,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="multithreading.latchthreading.AppLatch" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MainProject" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AppExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="multithreading.latchthreading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="multithreading.latchthreading.AppExecutor" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1071,19 +1083,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.LinkedList1" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MarsRover" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ProducerConsumer" />
-      <item index="3" class="java.lang.String" itemvalue="Application.App" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AppLatch" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MarsRover" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ProducerConsumer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.App" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AppLatch" />
+      <item index="4" class="java.lang.String" itemvalue="Application.AppExecutor" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AppLatch" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ProducerConsumer" />
-        <item index="2" class="java.lang.String" itemvalue="Application.App" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MarsRover" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LinkedList1" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AppExecutor" />
+        <item index="1" class="java.lang.String" itemvalue="Application.AppLatch" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ProducerConsumer" />
+        <item index="3" class="java.lang.String" itemvalue="Application.App" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MarsRover" />
       </list>
     </recent_temporary>
   </component>
@@ -1119,7 +1131,7 @@
       <workItem from="1502987607070" duration="344000" />
       <workItem from="1502988595269" duration="1314000" />
       <workItem from="1503064264614" duration="13390000" />
-      <workItem from="1503208031328" duration="11716000" />
+      <workItem from="1503208031328" duration="11948000" />
     </task>
     <task id="LOCAL-00001" summary="first phase basic linked list and array operations created.">
       <created>1500914521165</created>
@@ -1132,7 +1144,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73164000" />
+    <option name="totallyTimeSpent" value="73396000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1145,6 +1157,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="26" width="1299" height="736" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1252,13 +1265,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="143" column="17" lean-forward="false" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/util/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1818">
@@ -1672,8 +1678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multithreading/latchthreading/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="33" column="71" lean-forward="false" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        <state relative-caret-position="81">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1682,9 +1688,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multithreading/latchthreading/AppLatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="162">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/multithreading/latchthreading/AppExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
