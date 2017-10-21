@@ -10,6 +10,11 @@ public class BstTree {
         preOrderTranversal(t);
         System.out.println("");
         postOrderTranversal(t);
+        System.out.println("Left View");
+        leftView(t,0,0);
+        System.out.println("Right View");
+        rightView(t,0,0);
+
     }
 
     static TreeNode add(int value, TreeNode node) {
@@ -53,14 +58,21 @@ public class BstTree {
     static TreeNode createSampleBinaryTree() {
 
         TreeNode treeNode = null;
-        treeNode = add(20, treeNode);
+      /*  treeNode = add(20, treeNode);
         add(30, treeNode);
         add(10, treeNode);
         add(5, treeNode);
         add(15, treeNode);
         add(25, treeNode);
-        add(35, treeNode);
-        return treeNode;
+        add(35, treeNode);*/
+        treeNode = add(4, treeNode);
+        add(5, treeNode);
+        add(2, treeNode);
+        add(3, treeNode);
+        add(1, treeNode);
+        add(6, treeNode);
+        add(7, treeNode);
+      return treeNode;
     }
 
     static void inOrderTranversal(TreeNode treeNode) {
@@ -106,6 +118,45 @@ public class BstTree {
 
         }
     }
+
+    static int leftView(TreeNode treeNode,int result,int level)
+    {
+        if(treeNode==null)
+        {
+            return result;
+        }
+
+        if(level==result)
+        {
+            System.out.println(" :"+treeNode.value);
+            result++;
+        }
+        result= leftView(treeNode.leftNode,result,level+1);
+        leftView(treeNode.rightNode,result,level+1);
+
+       return result;
+    }
+
+
+
+    static int rightView(TreeNode treeNode,int result,int level)
+    {
+        if(treeNode==null)
+        {
+            return result;
+        }
+
+        if(level==result)
+        {
+            System.out.print( " :" +treeNode.value);
+            result++;
+        }
+        result= rightView(treeNode.rightNode,result,level+1);
+        rightView(treeNode.leftNode,result,level+1);
+
+        return result;
+    }
+
 
 
 

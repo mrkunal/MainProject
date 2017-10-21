@@ -1,0 +1,28 @@
+public class DefaultMethod implements Left,Right{
+
+public void show(){
+Left.super.show();
+}
+public static void main(String args[])
+{
+
+DefaultMethod d=new DefaultMethod();
+d.show();
+}
+
+}
+
+interface Left{
+
+
+	default void show(){
+	System.out.println("Left Show");
+	}
+}
+interface Right{
+
+
+	default void show(){
+	System.out.println("Right Show");
+	}
+}
