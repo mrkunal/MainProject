@@ -11,10 +11,10 @@ import java.util.Scanner;
 public class RotationOfArray {
 
     //    static int[] a = new int[5];
-    int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-    int d;//= 3;
+    public static int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+    public static int d = 5;
 
-    void showArray() {
+    public static void showArray() {
         for (int i : a
                 ) {
             System.out.print(" " + i);
@@ -22,7 +22,7 @@ public class RotationOfArray {
         }
     }
 
-    void rotateArrayUsingApproach1() {
+    public static void rotateArrayUsingApproach1() {
         int temp;
         int count = d;
         while (count > 0) {
@@ -45,7 +45,7 @@ public class RotationOfArray {
         rotationOfArray.d = rollno;
         System.out.println("Array Before rotation");
         rotationOfArray.showArray();
-//        rotationOfArray.rotateArrayUsingApproach1();
+        rotationOfArray.rotateArrayUsingApproach1();
 //        rotationOfArray.rotateArrayUsingGcdApproach();
         rotationOfArray.rotateArrayApproach3();
         System.out.println("Array after rotation");
@@ -54,7 +54,7 @@ public class RotationOfArray {
     }
 
     // This method will only work if the gcd of n size and d is equal
-    void rotateArrayUsingGcdApproach() {
+    public static void rotateArrayUsingGcdApproach() {
         int temp;
         int count = 0;
         while (count < d) {
@@ -69,7 +69,7 @@ public class RotationOfArray {
 
     }
 
-    void rotateArrayApproach3() {
+   public static void rotateArrayApproach3() {
         int[] temp = new int[d];
 
 

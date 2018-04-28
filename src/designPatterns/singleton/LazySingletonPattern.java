@@ -16,7 +16,7 @@ public class LazySingletonPattern {
     }
 
 
-    public static synchronized LazySingletonPattern getThreadSafeInstance() {
+    public static   synchronized LazySingletonPattern getThreadSafeInstance() {
         if (instance == null) {
             instance = new LazySingletonPattern();
         }
