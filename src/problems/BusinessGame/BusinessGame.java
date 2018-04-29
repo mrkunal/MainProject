@@ -85,6 +85,7 @@ public class BusinessGame {
              case HOTEL_SILVER: computeHotel(cell,player); break;
              case HOTEL_GOLD: computeHotel(cell,player); break;
              case HOTEL_PLATINUM: computeHotel(cell,player); break;
+             case EMPTY:break;
              default: new RuntimeException("Error occurred in Move");
          }
 
