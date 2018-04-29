@@ -25,6 +25,14 @@ public class Cell {
     public void setPlayer(Player player) {
         this.player = player;
     }
+
+    @Override
+    public String toString() {
+        return "Cell{" +
+                "cellType=" + cellType +
+                ", player=" + player +
+                '}';
+    }
 }
 
 enum  CellType{

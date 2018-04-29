@@ -76,6 +76,7 @@ public class BusinessGame {
 
     static  void checkMove(Player player,Cell cell){
 
+        System.out.println("Before Player :"+player+" Cell :" + cell);
          switch (cell.getCellType())
          {
 
@@ -86,6 +87,8 @@ public class BusinessGame {
              case HOTEL_PLATINUM: computeHotel(cell,player); break;
              default: new RuntimeException("Error occurred in Move");
          }
+
+        System.out.println("After Player :"+player+" Cell :" + cell);
 
     }
 
@@ -109,9 +112,9 @@ public class BusinessGame {
 
             }else {
                 switch (cell.getCellType()){
-                    case HOTEL_SILVER: cell.getPlayer().addAmount(player.deductAmount(50));
-                    case HOTEL_GOLD: cell.getPlayer().addAmount(player.deductAmount(150));
-                    case HOTEL_PLATINUM: cell.getPlayer().addAmount(player.deductAmount(300));
+                    case HOTEL_SILVER: cell.getPlayer().addAmount(player.deductAmount(50)); break;
+                    case HOTEL_GOLD: cell.getPlayer().addAmount(player.deductAmount(150)); break;
+                    case HOTEL_PLATINUM: cell.getPlayer().addAmount(player.deductAmount(300)); break;
                 }
             }
 
