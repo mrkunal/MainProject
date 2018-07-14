@@ -7,7 +7,7 @@ import java.util.concurrent.CountDownLatch;
  */
 public class AppLatch {
     public static void main(String[] args) {
-        CountDownLatch countDownLatch = new CountDownLatch(1);
+        CountDownLatch countDownLatch = new CountDownLatch(3);
 
         Worker w1 = new Worker(countDownLatch, "W1");
         Worker w2 = new Worker(countDownLatch, "W2");
@@ -22,9 +22,9 @@ public class AppLatch {
         w3.start();
         w4.start();
         w5.start();
-        w6.start();
-        w7.start();
-        w8.start();
+//        w6.start();
+//        w7.start();
+//        w8.start();
 
 
         System.out.println("Waiting for execution Completion");
