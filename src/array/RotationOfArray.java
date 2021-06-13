@@ -1,5 +1,8 @@
 package array;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -36,6 +39,13 @@ public class RotationOfArray {
     }
 
     public static void main(String[] args) {
+
+        String val="my age, test string , blah";
+
+        List<String> arr = Arrays.asList(val.split(","));
+        arr.forEach(s -> System.out.println(s));
+    }
+    public static void main1(String[] args) {
         RotationOfArray rotationOfArray = new RotationOfArray();
         Scanner sc = new Scanner(System.in);
 
