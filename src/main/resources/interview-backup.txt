@@ -1,0 +1,133 @@
+1. "Pair programming, MCQ score, domain exercise all combined score
+  GOF design Pattern application, standard solution with details"
+
+
+2.   "Language fundamentals, Solid Principles, Standard lib(Jackson,JIB, etc)
+Adv libraries (RX Java, VAVAR, Tink, ANtlr4, Metrics, etc) , Solid"
+
+
+- When you should use composition vs inheritance?
+- How you can make a class Serializable?
+- How to make a class clonable? how u can perform the shallow copy and deep copy?
+- SOLID principles ? write example of interface seggregation
+
+
+- Object oriented programming
+- functional programming
+- OOps vs functional
+
+- finally and finalize difference
+- class and object difference
+- Polymorphism
+- JDK vs JRE
+
+SOLID principle
+Jackson
+
+
+3. "Collections ,Data Structure, Basic Internals and Algorithms & complexities
+Adv collection internals , Time space complexity, Adv Algorithm"
+
+- HashMap internal working
+- ArrayList
+- Internal working of HashSet
+- hashcode and equals
+- what is fail fast and fail safe iterator?
+
+-----
+
+3. "Generics,Lambda expr, Functional Interface,streams , predicate, Bi-predicate
+Completable future,optionals, Parallel ,Serial Stream, Lazy streams "
+
+- lambda
+- functional interfaces
+- predicate, BiFunction , Optionals
+- parallel stream vs normal stream
+
+- Intermediate and terminal operations
+
+Generics--
+
+Stream --
+
+group by -
+
+optional - 
+
+
+4. "Any one type GOF Design Patterns creational/structural/behavioural)
+Singleton+Awareness to more than one design pattern categories listed above"
+
+
+- Categories of design pattern?
+-
+- any design pattern aware of ?
+
+
+
+5. "Multithreading:  ReentrantLock,Fork & Join,Sync,Executor Framework
+BlockingQueue, Latch, Barrier , Thread local"
+
+
+- what are the different ways to create a thread in java?
+- what is future and callable relation?
+
+- wait,notify,notifyall
+- wait method is in which class? why in object class
+- states of threads, what happened in the background
+- Reentrant locks
+- executor service
+- thread pool
+- Counddown latch
+
+
+
+6. "Messaging :Topic/queue, durability, Schema,Protocols, Kafka,Configuration
+EDA, Command model, choreogrphy"
+
+- What is asynchronous messaging
+- How u can achieve the pub/sub behaviour in your application?
+- what are brokers and topics
+- what is durable subscription
+- DMQ
+- AMQP, JMS, MQTT
+-- RabbitMQ
+- messaging queues
+- providers
+
+7. "Database RDBMS/No SQL (SQL, Joins, Indexing), JPA
+
+DataModeling, Database Isolations, Sharding, CDC"
+
+- rdms vs nosql
+- relationships one to one,one
+- drop column from table
+ALTER TABLE classics DROP pages;
+
+- Blob in databases
+- Indexing in the DB, internally does
+- Sharding
+- JPA
+
+// join queries were not that much correct
+
+
+8. "Profiler, finalize, garbage collection basics, JVM Configuration
+GC Dump Analysis,GC algos,concurrent/ parallel/full/partial GC "
+
+- How can I instruct the GC to intiate the GC cycle?
+   -> System.gc()
+- When does object becomes eligible for GC?
+- GC runs in which part of memory? stack or Heap?
+-  what is Daemon thread? Is Gc Daemon thread?
+
+- garbage collector  ---
+- algorithm  --
+- memory areas --
+- finally and finalize  --
+
+
+
+
+
+

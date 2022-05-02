@@ -1,0 +1,161 @@
+1. "Pair programming, MCQ score, domain exercise all combined score
+  GOF design Pattern application, standard solution with details"
+
+
+2.   "Language fundamentals, Solid Principles, Standard lib(Jackson,JIB, etc)
+Adv libraries (RX Java, VAVAR, Tink, ANtlr4, Metrics, etc) , Solid"
+
+
+- When you should use composition vs inheritance?  // theoritically
+- How you can make a class Serializable? // able to tell
+- How to make a class clonable? how u can perform the shallow copy and deep copy? // able to write code and explain
+- SOLID principles ? write example of interface seggregation // able to explain the, code was okay
+
+
+- Object oriented programming
+- functional programming
+- OOps vs functional
+
+- finally and finalize difference
+- class and object difference
+- Polymorphism
+- JDK vs JRE
+
+SOLID principle
+Jackson  // not internally aware
+
+
+3. "Collections ,Data Structure, Basic Internals and Algorithms & complexities
+Adv collection internals , Time space complexity, Adv Algorithm"
+
+- HashMap internal working  // aware of the
+- ArrayList // not correct
+- Internal working of HashSet
+- hashcode and equals  // contract not aware
+- what is fail fast and fail safe iterator?  // not correct
+
+-----
+
+3. "Generics,Lambda expr, Functional Interface,streams , predicate, Bi-predicate
+Completable future,optionals, Parallel ,Serial Stream, Lazy streams "
+
+- lambda
+- functional interfaces // able to write
+- predicate, BiFunction , Optionals  // able to tell the predicate
+- parallel stream vs normal stream // not able to tell
+
+- Intermediate and terminal operations // not able to clearly
+
+Generics-- // able to tell
+
+Stream --
+
+group by - // not aware
+
+optional - // not conveinced
+
+
+4. "Any one type GOF Design Patterns creational/structural/behavioural)
+Singleton+Awareness to more than one design pattern categories listed above"
+
+
+- Categories of design pattern? // not clearly explain
+-
+- any design pattern aware of ?  // not able to write a code for complete design , incorrect way
+
+
+
+5. "Multithreading:  ReentrantLock,Fork & Join,Sync,Executor Framework
+BlockingQueue, Latch, Barrier , Thread local"
+
+
+- what are the different ways to create a thread in java? // able  to
+- what is future and callable relation? // no
+
+- wait,notify,notifyall // not aware
+- wait method is in which class? why in object class
+- states of threads, what happened in the background  // able to tell very basic
+- Reentrant locks
+- executor service
+- thread pool
+- Counddown latch
+
+
+
+6. "Messaging :Topic/queue, durability, Schema,Protocols, Kafka,Configuration
+EDA, Command model, choreogrphy"
+
+- What is asynchronous messaging
+- How u can achieve the pub/sub behaviour in your application?
+- what are brokers and topics
+- what is durable subscription
+- DMQ
+- AMQP, JMS, MQTT
+-- RabbitMQ
+- messaging queues
+- providers
+ (Not aware)
+
+7. "Database RDBMS/No SQL (SQL, Joins, Indexing), JPA
+
+DataModeling, Database Isolations, Sharding, CDC"
+
+- rdms vs nosql   // no able to clearly explain
+- relationships one to one,one
+- drop column from table  // not able to tell
+ALTER TABLE classics DROP pages;
+
+- Blob in databases  // not correct
+- Indexing in the DB, internally does  // not aware
+- Sharding  // not aware and replication
+- JPA //
+
+// ORM
+// join queries almost correct
+
+
+8. "Profiler, finalize, garbage collection basics, JVM Configuration
+GC Dump Analysis,GC algos,concurrent/ parallel/full/partial GC "
+
+- How can I instruct the GC to intiate the GC cycle?
+   -> System.gc()  // not correct that much
+- When does object becomes eligible for GC? // able to tell
+- GC runs in which part of memory? stack or Heap?
+-  what is Daemon thread? Is Gc Daemon thread?
+
+- garbage collector  --- // not aware than
+- algorithm  --
+- memory areas --  // not aware
+- finally and finalize  --
+
+
+----
+1.
+ able to tell basics
+ able to tell the cron
+
+2.
+ not correct
+
+3.
+ Not that much
+
+4.
+ only html,
+
+5.
+ okiesh
+
+6.
+no
+
+7.
+no that much
+
+8.
+no
+
+
+
+
+

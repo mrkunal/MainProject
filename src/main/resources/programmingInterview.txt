@@ -1,0 +1,143 @@
+-----Find the boundary index of number in the sorted array
+
+Input:
+int[] a = {0,1,1,2,2,2,3,3,3,3,3,4,4,5}
+
+Output:
+  6 11
+
+-----Find all pairs from array elements whose sum is equal to the given number.
+
+Input:
+int[]  arr= {1,10,4,8,7,2,5}
+number = 12
+
+Output:
+(4,8)
+(7,5)
+(10,2)
+
+// tells the very basic approach not the optimal one
+// able to code with basic approach
+// not able to think with giving
+
+
+------ In Order Transversal of a Binary Tree  // not able write code
+------ Sort the linked List
+// Not able to write Code
+
+Map sorting values
+
+
+
+Map not able
+----- Lambda
+
+class Student{
+
+String name;
+int marks;
+}
+
+List<Student> students=new LinkedList();
+
+1. find List of names where marks is greater than 40. // able to write code
+
+2. write a predicate to check in list do we have person who scored more than 90. //able to write code
+
+3. write a predicate to check in list do we have person who scored less than 10.
+
+4. Or of predicate
+
+
+
+
+---- Multithreading,
+
+Input:
+
+Thread1 -> {0,2,4,6,8..}
+Thread2 -> {1,3,5,7,9..}
+
+Output ->
+
+ {1,2,3,4,5,6...}
+
+------ databases
+
+inner join
+left join
+right join
+full join
+
+
+Student
+
+id   name  age
+
+1    Raj   25
+2    John  33
+3    Lisa  28
+4    Albert 20
+5    Leo    26
+
+GAME
+
+id  name
+1   cricket
+2   tennis
+
+student_course
+
+id  student_id  coursename
+1    2      Electronics
+2    3      Chemistry
+3    5      Science
+4    null   English
+
+
+
+// Scenarios Based questions :: //
+
+1. CROSS JOIN
+
+-> list all students with all games,
+
+SELECT * FROM student cross_join game
+
+2. Inner Join
+
+-> list all students with the course name
+
+SELECT A.name , B.coursename
+FROM student AS A
+INNER JOIN student_course AS B
+ON A.id = B.student_id
+
+3. RIGHT Join
+
+->-> list all records of student which are matching as well as non matching in the student_course
+
+SELECT A.name , B.coursename
+FROM student_course AS B
+RIGHt JOIN student AS A
+ON A.id = B.student_id
+
+
+4. LEFT Join
+
+-> list all records of course which are matching as well as non matching in the students
+
+SELECT A.name , B.coursename
+FROM student_course AS B
+LEFT JOIN student AS A
+ON A.id = B.student_id
+
+5. Outer Join
+
+-> list all records which are matching as well as non matching
+
+SELECT A.name , B.coursename
+FROM student_course AS B
+OUTER JOIN student AS A
+ON A.id = B.student_id
